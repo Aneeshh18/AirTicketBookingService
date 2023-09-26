@@ -18,12 +18,12 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    userld: {
+    userId: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
     status: {
-      type:DataTypes.ENUM,
+      type: DataTypes.ENUM,
       allowNull: false,
       values: ['InProcess', 'Booked', 'Cancelled'],
       defaultValue: 'InProcess'
